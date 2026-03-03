@@ -1,7 +1,7 @@
-FROM eclipse-temurin:11.0.18_10-jre-jammy
+FROM eclipse-temurin:eclipse-temurin:25.0.2_10-jre-ubi10-minimal
 
 # renovate: datasource=gitlab-releases depName=graphviz/graphviz versioning=semver registryUrl=https://gitlab.com
-ARG GRAPHVIZ_VERSION=9.0.0
+ARG GRAPHVIZ_VERSION=14.1.3
 
 RUN apt-get update && apt-get install --no-install-recommends --yes \
     libx11-6 \
